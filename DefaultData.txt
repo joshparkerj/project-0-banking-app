@@ -8,6 +8,7 @@ employee	robLovesSurf	password	18000	003	Midlothian	004	Robert	Palmer
 employee	Gumby	claymation	80000	003	Midlothian	006	David	Beans
 employee	donna032	badpassword	10000	003	San Francisco	008	Ferret	Weasel
 employee	aaron004	12345	1000000	003	Salt Lake City	010	Otter	Wobbegong
+employee	AngryBird	soangry	16000	151	Tacoma	159	Angry	Bird
 admin	doug001	helloworld	35000	003	Dallas	003	Douglas	Centeno
 admin	pikachu	pikapika	750	003	Dallas	005	Huey	Lewis
 admin	ethel064	abcdefg	100000	003	Truth Or Consequences	007	Cat	Dog
