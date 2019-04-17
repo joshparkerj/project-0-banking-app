@@ -95,5 +95,9 @@ public class BankDB implements IDB {
 	public void addCustomer(Customer c) {
 		this.customers.add(c);
 	}
+	
+	public void addAdmin(Admin a) {
+		this.admins.add(a);
+	}
 
 }
