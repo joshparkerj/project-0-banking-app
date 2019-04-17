@@ -18,15 +18,14 @@ public class BankDB implements IDB {
 		filename = f;
 	}
 	
-	public static BankDB getDB() {
-		// System.out.println("getting db");
-		// System.out.println(instantiated);
+	public static BankDB getDB() throws Exception {
 		if (instantiated) return uniqueInstance;
 		uniqueInstance = new BankDB();
+		instantiated = true;
 		return uniqueInstance;
 	}
 
-	private BankDB() {
+	private BankDB() throws Exception {
 		System.out.println("constructing db");
 		this.t = new TextFile(filename);
 		System.out.println("constructed textfile");

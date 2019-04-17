@@ -2,6 +2,7 @@ admin	doug001	helloworld	35000	003	Dallas	003	Douglas	Centeno
 account	1885	$88.11	90001	savings
 employee	robLovesSurf	password	18000	003	Midlothian	004	Robert	Palmer
 admin	pikachu	pikapika	750	003	Dallas	005	Huey	Lewis
+warehouse	87000	88 Pike St.	Amarillo
 employee	Gumby	claymation	80000	003	Midlothian	006	David	Beans
 customer	fiona128	somebodyLovesYou	1885
 admin	ethel064	abcdefg	100000	003	Truth Or Consequences	007	Cat	Dog

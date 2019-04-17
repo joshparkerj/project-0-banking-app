@@ -1,9 +1,7 @@
 package project0;
 
-import java.util.*;
-
 public class Main {
-	
+
 	private static String filename;
 
 	public static void main(String args[]) {
@@ -13,11 +11,15 @@ public class Main {
 			filename = "DefaultData.txt";
 		}
 		BankDB.setFilename(filename);
-		IDB db = BankDB.getDB();
-		String[] s = db.serialize().split("\t");
-		for (int i = 0; i < s.length; i++) {
-			System.out.println(s[i]);
+		try {
+			IDB db = BankDB.getDB();
+			String[] s = db.serialize().split("\t");
+			for (int i = 0; i < s.length; i++) {
+				System.out.println(s[i]);
+			}
+			System.out.print(db.serialize());
+		} catch (Exception e) {
+			System.out.print(e);
 		}
-		System.out.print(db.serialize());
 	}
 }
