@@ -9,7 +9,7 @@ public class LoginMenu extends ABCMenu {
 	private String userid;
 	private String usertype;
 	
-	public LoginMenu(IMenuTree mt, Scanner s) {
+	public LoginMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

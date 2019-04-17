@@ -7,7 +7,7 @@ public class CloseAccountMenu extends ABCMenu {
 	private String accountNumber;
 	private String confirmation;
 
-	public CloseAccountMenu(IMenuTree mt, Scanner s) {
+	public CloseAccountMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 

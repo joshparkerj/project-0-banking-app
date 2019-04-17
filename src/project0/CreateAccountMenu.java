@@ -8,7 +8,7 @@ public class CreateAccountMenu extends ABCMenu {
 	private String type;
 	private String owner_ssn;
 	
-	public CreateAccountMenu(IMenuTree mt, Scanner s) {
+	public CreateAccountMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

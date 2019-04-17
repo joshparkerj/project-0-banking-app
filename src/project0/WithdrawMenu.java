@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class WithdrawMenu extends ABCMenu {
 	
-	public WithdrawMenu(IMenuTree mt, Scanner s) {
+	public WithdrawMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

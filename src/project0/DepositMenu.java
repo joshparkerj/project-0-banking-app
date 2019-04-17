@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DepositMenu extends ABCMenu {
 	
-	public DepositMenu(IMenuTree mt, Scanner s) {
+	public DepositMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

@@ -13,7 +13,7 @@ public class Main {
 		BankDB.setFilename(filename);
 		try {
 			IDB db = BankDB.getDB();
-			IMenuTree mt = new MenuTree();
+			MenuTree mt = new MenuTree();
 			mt.menu("Splash");
 			db.write();
 		} catch (Exception e) {

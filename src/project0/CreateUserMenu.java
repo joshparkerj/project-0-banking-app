@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CreateUserMenu extends ABCMenu {
 	
-	public CreateUserMenu(IMenuTree mt, Scanner s) {
+	public CreateUserMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

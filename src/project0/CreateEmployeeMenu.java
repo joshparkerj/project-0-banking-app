@@ -13,7 +13,7 @@ public class CreateEmployeeMenu extends ABCMenu {
 	private String FirstName;
 	private String LastName;
 
-	public CreateEmployeeMenu(IMenuTree mt, Scanner s) {
+	public CreateEmployeeMenu(MenuTree mt, Scanner s) {
 		super(mt, s);
 	}
 

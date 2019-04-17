@@ -3,7 +3,7 @@ package project0;
 import java.util.Scanner;
 import java.lang.reflect.InvocationTargetException;
 
-public class MenuTree implements IMenuTree {
+public class MenuTree {
 
 	private Scanner Scanner;
 
@@ -14,7 +14,7 @@ public class MenuTree implements IMenuTree {
 	public void menu(String menuOption) {
 		try {
 			Class<?> cls = Class.forName("project0." + menuOption + "Menu");
-			ABCMenu menu = (ABCMenu)cls.getConstructor(IMenuTree.class, Scanner.class).newInstance(this, this.Scanner);
+			ABCMenu menu = (ABCMenu)cls.getConstructor(MenuTree.class, Scanner.class).newInstance(this, this.Scanner);
 			menu.Run();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();

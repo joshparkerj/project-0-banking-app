@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class SplashMenu extends ABCMenu {
 	
-	public SplashMenu(IMenuTree mt, Scanner s) {
+	public SplashMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

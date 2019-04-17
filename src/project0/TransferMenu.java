@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class TransferMenu extends ABCMenu {
 	
-	public TransferMenu(IMenuTree mt, Scanner s) {
+	public TransferMenu(MenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	
