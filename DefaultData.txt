@@ -1,9 +1,11 @@
 account	1885	$88.11	90001	savings
 account	1885	$14.82	90001	checking
+account	1885	$0.00	ELEVENTY_EIGHT	CHECKING
 customer	fiona128	somebodyLovesYou	1885
 customer	calypso016	rockon	9103
 customer	Jeff	HelloIAmJeff	123123
 customer	Jeff	HelloIAmJeff	123123
+customer	BubbaGump	Somebody Horrible is here with me	4666G
 employee	robLovesSurf	password	18000	003	Midlothian	004	Robert	Palmer
 employee	Gumby	claymation	80000	003	Midlothian	006	David	Beans
 employee	donna032	badpassword	10000	003	San Francisco	008	Ferret	Weasel

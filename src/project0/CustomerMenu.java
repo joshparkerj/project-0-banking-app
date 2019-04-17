@@ -20,6 +20,7 @@ public class CustomerMenu extends ABCMenu {
 		case "1":
 		case "1.":
 			mt.menu("CreateAccount");
+			break;
 		default:
 			System.out.println("Your input was not understood");
 			mt.menu("Customer");

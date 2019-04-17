@@ -20,6 +20,7 @@ public class LoginMenu extends ABCMenu {
 		this.username = s.nextLine();
 		System.out.println("Enter your password:");
 		this.password = s.nextLine();
+		this.Execute();
 	}
 	
 	private void Execute() {

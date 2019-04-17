@@ -104,6 +104,10 @@ public class BankDB implements IDB {
 		this.employees.add(e);
 	}
 	
+	public void addAccount(Account a) {
+		this.accounts.add(a);
+	}
+	
 	public String getAdminID(String username, String password) {
 		for (Admin a : this.admins) {
 			if (a.getUsername() == username && a.getPassword() == password) {
@@ -123,8 +127,13 @@ public class BankDB implements IDB {
 	}
 	
 	public String getCustomerID(String username, String password) {
-		for (Admin c : this.admins) {
-			if (c.getUsername() == username && c.getPassword() == password) {
+		System.out.println("getting customer id");
+		System.out.println(username);
+		System.out.println(password);
+		for (Customer c : this.customers) {
+			System.out.println(c.getUsername());
+			System.out.println(c.getPassword());
+			if (c.getUsername().equals(username) && c.getPassword().equals(password)) {
 				return c.getID();
 			}
 		}
