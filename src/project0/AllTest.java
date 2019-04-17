@@ -23,6 +23,8 @@ public class AllTest {
 		e.testWriteToDisc();
 		BankDBTest f = new BankDBTest();
 		f.testGetDB();
+		MenuTreeTest g = new MenuTreeTest();
+		g.testDeposit();
 	}
 
 }

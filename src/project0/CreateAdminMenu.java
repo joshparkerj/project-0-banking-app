@@ -42,7 +42,7 @@ public class CreateAdminMenu extends ABCMenu {
 			BankDB.getDB()
 				  .addAdmin(new Admin("admin\t" + this.username + "\t" + this.password + "\t" + this.salary + "\t" + this.supervisorID + "\t" + this.branch + "\t" + this.EmployeeID + "\t" + this.FirstName + "\t" + this.LastName));
 			System.out.println("Admin added");
-			mt.splash();
+			mt.menu("Splash");
 		} catch (Exception e) {
 			System.out.print(e);
 		}

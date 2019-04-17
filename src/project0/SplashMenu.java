@@ -19,18 +19,18 @@ public class SplashMenu extends ABCMenu {
 		switch(this.selection) {
 		case "1":
 		case "1.":
-			mt.createUser();
+			mt.menu("CreateUser");
 			break;
 		case "2":
 		case "2.":
-			mt.login();
+			mt.menu("Login");
 			break;
 		case "3":
 		case "3.":
 			break;
 		default:
 			System.out.println("Your selection was not understood.");
-			mt.splash();
+			mt.menu("Splash");
 		}
 	}
 	

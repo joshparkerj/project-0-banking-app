@@ -27,7 +27,7 @@ public class CreateCustomerMenu extends ABCMenu {
 			BankDB.getDB()
 				  .addCustomer(new Customer("customer\t" + this.username + "\t" + this.password + "\t" + this.SSN));
 			System.out.println("Customer added");
-			mt.splash();
+			mt.menu("Splash");
 		} catch (Exception e) {
 			System.out.print(e);
 		}

@@ -18,19 +18,19 @@ public class CreateUserMenu extends ABCMenu {
 		switch(this.selection) {
 		case "1":
 		case "1.":
-			mt.createCustomer();
+			mt.menu("CreateCustomer");
 			break;
 		case "2":
 		case "2.":
-			mt.createEmployee();
+			mt.menu("CreateEmployee");
 			break;
 		case "3":
 		case "3.":
-			mt.createAdmin();
+			mt.menu("CreateAdmin");
 			break;
 		default:
 			System.out.println("Your input was not understood");
-			mt.createUser();
+			mt.menu("CreateUser");
 		}
 	}
 

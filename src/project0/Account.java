@@ -1,6 +1,6 @@
 package project0;
 
-public class Account implements ISerializable {
+public class Account {
 	
 	private String owner_ssn;
 	private String balance;

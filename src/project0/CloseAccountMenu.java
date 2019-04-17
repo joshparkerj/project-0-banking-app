@@ -24,16 +24,16 @@ public class CloseAccountMenu extends ABCMenu {
 		case "yes":
 		case "y":
 			this.closeAccount();
-			mt.account();
+			mt.menu("Account");
 			break;
 		case "no":
 		case "n":
 			System.out.println("Account closure cancelled.");
-			mt.account();
+			mt.menu("Account");
 			break;
 		default:
 			System.out.println("Your input was not understood");
-			mt.closeAccount();
+			mt.menu("CloseAccount");
 		}
 
 	}

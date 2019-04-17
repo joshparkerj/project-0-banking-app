@@ -14,7 +14,7 @@ public class Main {
 		try {
 			IDB db = BankDB.getDB();
 			IMenuTree mt = new MenuTree();
-			mt.splash();
+			mt.menu("Splash");
 			db.write();
 		} catch (Exception e) {
 			System.out.print(e);

@@ -18,23 +18,23 @@ public class AccountMenu extends ABCMenu {
 		switch (this.selection) {
 		case "1":
 		case "1.":
-			mt.deposit();
+			mt.menu("Deposit");
 			break;
 		case "2":
 		case "2.":
-			mt.withdraw();
+			mt.menu("Withdraw");
 			break;
 		case "3":
 		case "3.":
-			mt.transfer();
+			mt.menu("Transfer");
 			break;
 		case "4":
 		case "4.":
-			mt.closeAccount();
+			mt.menu("CloseAccount");
 			break;
 		default:
 			System.out.println("Your selection was not understood.");
-			mt.account();
+			mt.menu("Account");
 		}
 	}
 }

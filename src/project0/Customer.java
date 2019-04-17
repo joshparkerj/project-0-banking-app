@@ -1,6 +1,6 @@
 package project0;
 
-public class Customer implements ISerializable {
+public class Customer {
 
 	private String username;
 	private String password;
@@ -19,4 +19,17 @@ public class Customer implements ISerializable {
 	               this.password + "\t" +
 	               this.ssn + "\n";
 	}
+	
+	public String getUsername() {
+		return username;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public String getID() {
+		return ssn;
+	}
+	
 }

@@ -103,5 +103,32 @@ public class BankDB implements IDB {
 	public void addEmployee(Employee e) {
 		this.employees.add(e);
 	}
+	
+	public String getAdminID(String username, String password) {
+		for (Admin a : this.admins) {
+			if (a.getUsername() == username && a.getPassword() == password) {
+				return a.getID();
+			}
+		}
+		return null;
+	}
+	
+	public String getEmployeeID(String username, String password) {
+		for (Employee e : this.employees) {
+			if (e.getUsername() == username && e.getPassword() == password) {
+				return e.getID();
+			}
+		}
+		return null;
+	}
+	
+	public String getCustomerID(String username, String password) {
+		for (Admin c : this.admins) {
+			if (c.getUsername() == username && c.getPassword() == password) {
+				return c.getID();
+			}
+		}
+		return null;
+	}
 
 }

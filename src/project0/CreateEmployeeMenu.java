@@ -44,7 +44,7 @@ public class CreateEmployeeMenu extends ABCMenu {
 							+ "\t" + this.supervisorID + "\t" + this.branch + "\t" + this.EmployeeID + "\t"
 							+ this.FirstName + "\t" + this.LastName));
 			System.out.println("Employee added");
-			mt.splash();
+			mt.menu("Splash");
 		} catch (Exception e) {
 			System.out.print(e);
 		}

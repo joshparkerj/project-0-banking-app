@@ -1,6 +1,6 @@
 package project0;
 
-public class Admin implements ISerializable {
+public class Admin {
 
 	private String username;
 	private String password;
@@ -34,5 +34,17 @@ public class Admin implements ISerializable {
 	           this.FirstName + "\t" +
 	           this.LastName + "\n";
 	}
+	
+	public String getUsername() {
+		return username;
+	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public String getID() {
+		return EmployeeID;
+	}
+	
 }
