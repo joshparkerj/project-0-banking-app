@@ -3,7 +3,7 @@ package project0;
 public class AccountMenu implements IMenu {
 	
 	private String selection;
-	IMenuTree mt;
+	private IMenuTree mt;
 	
 	public AccountMenu(IMenuTree mt) {
 		this.mt = mt;
@@ -20,6 +20,22 @@ public class AccountMenu implements IMenu {
 		case "1":
 		case "1.":
 			mt.deposit();
+			break;
+		case "2":
+		case "2.":
+			mt.withdraw();
+			break;
+		case "3":
+		case "3.":
+			mt.transfer();
+			break;
+		case "4":
+		case "4.":
+			mt.closeAccount();
+			break;
+		default:
+			System.out.println("Your selection was not understood.");
+			mt.account();
 		}
 	}
 }

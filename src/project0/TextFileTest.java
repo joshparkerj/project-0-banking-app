@@ -21,14 +21,14 @@ public class TextFileTest {
 
 	@Test
 	public void testGetAccounts() {
-		List<ISerializable> b = this.a.getAccounts();
+		List<Account> b = this.a.getAccounts();
 		assertEquals("account\t1885\t$88.11\t90001\tsavings\n", b.get(0).serialize());
 		assertEquals("account\t1885\t$14.82\t90001\tchecking\n", b.get(1).serialize());
 	}
 
 	@Test
 	public void testGetAdmins() {
-		List<ISerializable> c = a.getAdmins();
+		List<Admin> c = a.getAdmins();
 		assertEquals("admin\tdoug001\thelloworld\t35000\t003\tDallas\t003\tDouglas\tCenteno\n", c.get(0).serialize());
 		assertEquals("admin\tpikachu\tpikapika\t750\t003\tDallas\t005\tHuey\tLewis\n", c.get(1).serialize());
 		assertEquals("admin\tethel064\tabcdefg\t100000\t003\tTruth Or Consequences\t007\tCat\tDog\n",
@@ -38,14 +38,14 @@ public class TextFileTest {
 
 	@Test
 	public void testGetCustomers() {
-		List<ISerializable> d = a.getCustomers();
+		List<Customer> d = a.getCustomers();
 		assertEquals("customer\tfiona128\tsomebodyLovesYou\t1885\n", d.get(0).serialize());
 		assertEquals("customer\tcalypso016\trockon\t9103\n", d.get(1).serialize());
 	}
 
 	@Test
 	public void testGetEmployees() {
-		List<ISerializable> e = a.getEmployees();
+		List<Employee> e = a.getEmployees();
 		assertEquals("employee\trobLovesSurf\tpassword\t18000\t003\tMidlothian\t004\tRobert\tPalmer\n",
 				e.get(0).serialize());
 		assertEquals("employee\tGumby\tclaymation\t80000\t003\tMidlothian\t006\tDavid\tBeans\n", e.get(1).serialize());

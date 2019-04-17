@@ -6,10 +6,10 @@ import java.io.*;
 public class TextFile implements ITextFile {
 	
 	public TextFile(String filename) throws Exception {
-		this.admins = new LinkedList<ISerializable>();
-		this.accounts = new LinkedList<ISerializable>();
-		this.customers = new LinkedList<ISerializable>();
-		this.employees = new LinkedList<ISerializable>();
+		this.admins = new LinkedList<Admin>();
+		this.accounts = new LinkedList<Account>();
+		this.customers = new LinkedList<Customer>();
+		this.employees = new LinkedList<Employee>();
 		this.filename = "./" + filename;
 		this.file = new File(this.filename);
 		this.br = new BufferedReader(new FileReader(this.file));
@@ -30,24 +30,24 @@ public class TextFile implements ITextFile {
 	private String filename;
 	private BufferedReader br;
 	private File file;
-	private List<ISerializable> accounts;
-	private List<ISerializable> admins;
-	private List<ISerializable> customers;
-	private List<ISerializable> employees;
+	private List<Account> accounts;
+	private List<Admin> admins;
+	private List<Customer> customers;
+	private List<Employee> employees;
 	
-	public List<ISerializable> getAccounts(){
+	public List<Account> getAccounts(){
 		return this.accounts;
 	}
 	
-	public List<ISerializable> getAdmins(){
+	public List<Admin> getAdmins(){
 		return this.admins;
 	}
 	
-	public List<ISerializable> getCustomers(){
+	public List<Customer> getCustomers(){
 		return this.customers;
 	}
 	
-	public List<ISerializable> getEmployees(){
+	public List<Employee> getEmployees(){
 		return this.employees;
 	}
 	

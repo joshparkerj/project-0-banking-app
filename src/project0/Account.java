@@ -23,4 +23,8 @@ public class Account implements ISerializable {
 	               this.type + "\n";
 	}
 	
+	public String getAccountNumber() {
+		return this.account_number;
+	}
+	
 }

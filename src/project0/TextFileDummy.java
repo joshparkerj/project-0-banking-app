@@ -4,20 +4,20 @@ import java.util.*;
 
 public class TextFileDummy implements ITextFile {
 	
-	public List<ISerializable> getCustomers(){
-		return new LinkedList<ISerializable>();
+	public List<Customer> getCustomers(){
+		return new LinkedList<Customer>();
 	}
 	
-	public List<ISerializable> getAccounts(){
-		return new LinkedList<ISerializable>();
+	public List<Account> getAccounts(){
+		return new LinkedList<Account>();
 	}
 	
-	public List<ISerializable> getEmployees(){
-		return new LinkedList<ISerializable>();
+	public List<Employee> getEmployees(){
+		return new LinkedList<Employee>();
 	}
 	
-	public List<ISerializable> getAdmins(){
-		return new LinkedList<ISerializable>();
+	public List<Admin> getAdmins(){
+		return new LinkedList<Admin>();
 	}
 	public void writeToDisc(IDB i) {
 		return;

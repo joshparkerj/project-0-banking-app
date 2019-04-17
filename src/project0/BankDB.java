@@ -5,10 +5,10 @@ import java.util.*;
 public class BankDB implements IDB {
 
 	private ITextFile t;
-	private List<ISerializable> accounts;
-	private List<ISerializable> customers;
-	private List<ISerializable> employees;
-	private List<ISerializable> admins;
+	private List<Account> accounts;
+	private List<Customer> customers;
+	private List<Employee> employees;
+	private List<Admin> admins;
 	private String s;
 	private static BankDB uniqueInstance;
 	private static boolean instantiated = false;
@@ -50,6 +50,35 @@ public class BankDB implements IDB {
 			this.s += admin.serialize();
 		});
 		return this.s;
+	}
+	
+	public List<Account> getAccounts(){
+		return this.accounts;
+	}
+	
+	public List<Customer> getCustomers(){
+		return this.customers;
+	}
+	
+	public List<Admin> getAdmins(){
+		return this.admins;
+	}
+	
+	public List<Employee> getEmployees(){
+		return this.employees;
+	}
+	
+	public Account getAccountByNumber(String accountNumber) {
+		for (Account a:this.accounts) {
+			if (a.getAccountNumber() == accountNumber) {
+				return a;
+			}
+		}
+		return null;
+	}
+	
+	public void deleteAccountByNumber(String accountNumber) {
+		this.accounts.removeIf(a -> (a.getAccountNumber() == accountNumber));
 	}
 
 }

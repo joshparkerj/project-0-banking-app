@@ -1,11 +1,11 @@
 package project0;
 
-public class DepositMenu implements IMenu {
+public class WithdrawMenu implements IMenu {
 
 	private String selection;
 	private IMenuTree mt;
 	
-	public DepositMenu(IMenuTree mt) {
+	public WithdrawMenu(IMenuTree mt) {
 		this.mt = mt;
 	}
 	

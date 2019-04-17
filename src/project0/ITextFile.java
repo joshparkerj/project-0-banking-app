@@ -4,10 +4,10 @@ import java.util.*;
 
 public interface ITextFile {
 
-	public List<ISerializable> getAccounts();
-	public List<ISerializable> getAdmins();
-	public List<ISerializable> getCustomers();
-	public List<ISerializable> getEmployees();
+	public List<Account> getAccounts();
+	public List<Admin> getAdmins();
+	public List<Customer> getCustomers();
+	public List<Employee> getEmployees();
 	public void writeToDisc(IDB i);
 	
 }
