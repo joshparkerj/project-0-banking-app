@@ -1,22 +1,21 @@
 package project0;
 
-public class AccountMenu implements IMenu {
-	
-	private String selection;
-	private IMenuTree mt;
-	
-	public AccountMenu(IMenuTree mt) {
-		this.mt = mt;
-	}
+import java.util.Scanner;
 
+public class AccountMenu extends ABCMenu {
+	
+	public AccountMenu(IMenuTree mt, Scanner s) {
+		super(mt,s);
+	}
+	
 	public void Run() {
 		System.out.print("Please choose from the following options: \n1. Make a deposit\n2. Make a withdrawal\n3. Make a transfer\n4. Close account\n\n");
-		this.selection = System.console().readLine();
-		Execute(selection);
+		this.selection = s.nextLine();
+		Execute();
 	}
 	
-	private void Execute(String selection) {
-		switch (selection) {
+	private void Execute() {
+		switch (this.selection) {
 		case "1":
 		case "1.":
 			mt.deposit();

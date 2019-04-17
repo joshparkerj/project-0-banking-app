@@ -10,8 +10,7 @@ public class BankDB implements IDB {
 	private List<Employee> employees;
 	private List<Admin> admins;
 	private String s;
-	private static BankDB uniqueInstance;
-	private static boolean instantiated = false;
+	private static BankDB uniqueInstance = null;
 	private static String filename;
 	
 	public static void setFilename(String f) {
@@ -19,9 +18,8 @@ public class BankDB implements IDB {
 	}
 	
 	public static BankDB getDB() throws Exception {
-		if (instantiated) return uniqueInstance;
+		if (uniqueInstance != null) return uniqueInstance;
 		uniqueInstance = new BankDB();
-		instantiated = true;
 		return uniqueInstance;
 	}
 
@@ -79,6 +77,23 @@ public class BankDB implements IDB {
 	
 	public void deleteAccountByNumber(String accountNumber) {
 		this.accounts.removeIf(a -> (a.getAccountNumber() == accountNumber));
+	}
+	
+	public boolean customerOwnsAccount(String customerSSN, String accountNumber) {
+		for (Account a:this.accounts) {
+			if (a.getAccountNumber() == accountNumber && a.getOwnerSSN() == customerSSN) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public void write() {
+		t.writeToDisc(this);
+	}
+	
+	public void addCustomer(Customer c) {
+		this.customers.add(c);
 	}
 
 }

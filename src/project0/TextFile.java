@@ -1,9 +1,23 @@
 package project0;
 
 import java.util.*;
+
 import java.io.*;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class TextFile implements ITextFile {
+	
+	private String filename;
+	private Path filepath;
+	private BufferedReader br;
+	private File file;
+	private List<Account> accounts;
+	private List<Admin> admins;
+	private List<Customer> customers;
+	private List<Employee> employees;
 	
 	public TextFile(String filename) throws Exception {
 		this.admins = new LinkedList<Admin>();
@@ -11,6 +25,7 @@ public class TextFile implements ITextFile {
 		this.customers = new LinkedList<Customer>();
 		this.employees = new LinkedList<Employee>();
 		this.filename = "./" + filename;
+		this.filepath = Paths.get(this.filename);
 		this.file = new File(this.filename);
 		this.br = new BufferedReader(new FileReader(this.file));
 		String st;
@@ -26,14 +41,6 @@ public class TextFile implements ITextFile {
 			}
 		}
 	}
-
-	private String filename;
-	private BufferedReader br;
-	private File file;
-	private List<Account> accounts;
-	private List<Admin> admins;
-	private List<Customer> customers;
-	private List<Employee> employees;
 	
 	public List<Account> getAccounts(){
 		return this.accounts;
@@ -52,6 +59,12 @@ public class TextFile implements ITextFile {
 	}
 	
 	public void writeToDisc(IDB i) {
-		i.serialize();
+		try (BufferedWriter w = Files.newBufferedWriter(this.filepath, Charset.forName("US-ASCII"))){
+			String s = i.serialize();
+			w.write(s,0,s.length());
+		} catch (IOException x) {
+			System.err.format("IOException: %s%n", x);
+		}
 	}
+
 }

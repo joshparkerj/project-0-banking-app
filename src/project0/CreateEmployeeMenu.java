@@ -2,9 +2,9 @@ package project0;
 
 import java.util.Scanner;
 
-public class TransferMenu extends ABCMenu {
+public class CreateEmployeeMenu extends ABCMenu {
 	
-	public TransferMenu(IMenuTree mt, Scanner s) {
+	public CreateEmployeeMenu(IMenuTree mt, Scanner s) {
 		super(mt,s);
 	}
 	

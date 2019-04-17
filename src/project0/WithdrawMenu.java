@@ -1,12 +1,11 @@
 package project0;
 
-public class WithdrawMenu implements IMenu {
+import java.util.Scanner;
 
-	private String selection;
-	private IMenuTree mt;
+public class WithdrawMenu extends ABCMenu {
 	
-	public WithdrawMenu(IMenuTree mt) {
-		this.mt = mt;
+	public WithdrawMenu(IMenuTree mt, Scanner s) {
+		super(mt,s);
 	}
 	
 	public void Run() {

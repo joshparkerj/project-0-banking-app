@@ -1,12 +1,11 @@
 package project0;
 
-public class DepositMenu implements IMenu {
+import java.util.Scanner;
 
-	private String selection;
-	private IMenuTree mt;
+public class DepositMenu extends ABCMenu {
 	
-	public DepositMenu(IMenuTree mt) {
-		this.mt = mt;
+	public DepositMenu(IMenuTree mt, Scanner s) {
+		super(mt,s);
 	}
 	
 	public void Run() {
@@ -16,4 +15,5 @@ public class DepositMenu implements IMenu {
 	private void Execute() {
 		
 	}
+	
 }

@@ -13,11 +13,9 @@ public class Main {
 		BankDB.setFilename(filename);
 		try {
 			IDB db = BankDB.getDB();
-			String[] s = db.serialize().split("\t");
-			for (int i = 0; i < s.length; i++) {
-				System.out.println(s[i]);
-			}
-			System.out.print(db.serialize());
+			IMenuTree mt = new MenuTree();
+			mt.splash();
+			db.write();
 		} catch (Exception e) {
 			System.out.print(e);
 		}

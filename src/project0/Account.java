@@ -27,4 +27,8 @@ public class Account implements ISerializable {
 		return this.account_number;
 	}
 	
+	public String getOwnerSSN() {
+		return this.owner_ssn;
+	}
+	
 }

@@ -7,4 +7,11 @@ public interface IMenuTree {
 	void transfer();
 	void closeAccount();
 	void account();
+	void splash();
+	void createUser();
+	void login();
+	void createCustomer();
+	void createEmployee();
+	void createAdmin();
+	
 }

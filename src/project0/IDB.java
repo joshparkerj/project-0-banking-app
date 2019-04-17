@@ -11,5 +11,7 @@ public interface IDB {
 	List<Customer> getCustomers();
 	Account getAccountByNumber(String accountNumber);
 	void deleteAccountByNumber(String accountNumber);
+	boolean customerOwnsAccount(String customerSSN, String accountNumber);
+	void write();
 	
 }
