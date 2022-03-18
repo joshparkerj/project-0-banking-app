@@ -1,5 +1,3 @@
-package project0;
-
 import java.util.Scanner;
 
 public class CreateEmployeeMenu extends ABCMenu {

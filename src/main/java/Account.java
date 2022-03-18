@@ -1,5 +1,3 @@
-package project0;
-
 public class Account {
 	
 	private String owner_ssn;

@@ -1,5 +1,3 @@
-package project0;
-
 import java.util.*;
 
 import java.io.*;

@@ -1,5 +1,3 @@
-package project0;
-
 public class UserSession {
 	
 	private static UserSession uniqueSession = null;
